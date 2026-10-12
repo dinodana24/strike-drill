@@ -207,8 +207,16 @@
         import { getAuth, signInAnonymously, signInWithCustomToken, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'strike-tracker-pro';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : { apiKey: "demo", projectId: "demo" };
+        const appId = 'strike-tracker-pro';
+        const firebaseConfig = {
+            apiKey: "AIzaSyDdN7BpAAe13kuVzAGyeQsk8ztjcZQhhnQ",
+            authDomain: "strike-tracker-12.firebaseapp.com",
+            projectId: "strike-tracker-12",
+            storageBucket: "strike-tracker-12.firebasestorage.app",
+            messagingSenderId: "970315426320",
+            appId: "1:970315426320:web:e7440ed8a0cbf90fd8f895",
+            measurementId: "G-202M4KDW5Y"
+        };
 
         let app, db, auth;
         try {
